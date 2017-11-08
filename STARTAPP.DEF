@@ -1,0 +1,16 @@
+;******* StartApp Module Definition File ********
+;
+;  The module definition file supplies extra information about the program
+;  module to the LINKER.
+;
+;  Note the WINDOWAPI keyword is required for link386
+NAME    StartApp WINDOWAPI
+
+DESCRIPTION 'PM Start Application'
+
+CODE    MOVEABLE
+DATA    MOVEABLE MULTIPLE
+
+HEAPSIZE  8192
+STACKSIZE 16384
+

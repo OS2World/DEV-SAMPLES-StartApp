@@ -1,0 +1,93 @@
+
+StartApp - Start Application Sample Code.
+
+
+DESCRIPTION:
+ This sample provides source code and executables that demonstrate
+ the capability to start WINOS2 sessions and an application to
+ run in that session from a PM application.  It also demonstrates
+ that this session (and any application running in that session)
+ can be terminated by the PM application that started it.
+
+ The implementation is by the usage of the WinStartApp API.  The
+ heart of this implementation can be found in the source file
+ SAPP.C.  Note, the sample also features in USER.C, the ability
+ to identify when the started session was ended by some other
+ process.  This is done by intercepting the WM_APPTERMINATENOTIFY
+ message.
+
+ Assumptions:
+   Sample assumes that the WINOS2 component of Warp is installed.
+
+   Sample assumes that the operating system is installed on the C
+   drive for specifying the startup directory path in the program
+   details structure.  See User_pszStartupDir in SAPP.C
+
+TASK:
+
+ Start a VDM session/application from a PM application.
+
+HOW TO RUN THE SAMPLE:
+
+-From an OS/2 command prompt: START STARTAPP.EXE
+
+SOFTWARE/HARDWARE PREREQUISITES:
+
+- IBM VisualAge C++ (for compiling)
+- OS/2 Warp
+- IBM or compatible 386 and up.
+
+BUILDING:
+  This sample was created in VisualAge C++ and may be used in
+  a project template.  A makefile, startapp.mak, has been provided
+  to use with the NMAKE utility.
+
+REQUIRED FILES      DESCRIPTIONS
+
+  dlg.c             Sample dialog procedure
+  dlg.h
+  help.c            Routines to interface with the Help Manager
+  help.h
+  help.ipf
+  help.rc
+  init.c            Initialization routines
+  main.c            main() entry point
+  main.h
+  main.ico
+  main.rc           resource compiler input
+  main.res
+  sapp.c            Heart of the StartApp program
+  pnt.c             Window painting routines
+  prodinfo.bmp
+  readme            this file
+  user.c            User message response routines
+  xtrn.h
+  startapp.def      module definition file
+  startapp.dlg      product information dialog
+  startapp.exe      executable
+  startapp.hlp      help file
+  startapp.ipf      help source
+  startapp.mak      makefile
+  startapp.inc      compile and link information
+
+
+ (c) Copyright IBM Corp. 1998  All rights reserved.
+
+ These sample programs are owned by International Business Machines
+ Corporation or one of its subsidiaries ("IBM") and are copyrighted and
+ licensed, not sold.
+
+ You may copy, modify, and distribute these sample programs in any
+ form without payment to IBM, for any purpose including developing,
+ using, marketing or distributing programs that include or are
+ derivative works of the sample programs.
+
+ The sample programs are provided to you on an "AS IS" basis, without
+ warranty of any kind.  IBM HEREBY EXPRESSLY DISCLAIMS ALL WARRANTIES,
+ EITHER EXPRESS OR IMPLIED, INCLUDING , BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+ Some jurisdictions do not allow for the exclusion or limitation of
+ implied warranties, so the above limitations or exclusions may not
+ apply to you.  IBM shall not be liable for any damages you suffer
+ as a result of using, modifying or distributing the sample programs
+ or their derivatives.

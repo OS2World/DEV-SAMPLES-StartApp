@@ -1,0 +1,6 @@
+main.obj user.obj init.obj pnt.obj dlg.obj help.obj +           
+sapp.obj            
+startapp.exe           
+startapp.map           
+CPPON30 + os2386                
+startapp.def           
